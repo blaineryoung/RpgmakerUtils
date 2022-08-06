@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,7 @@ namespace RpgmakerUtils
         public int iconIndex { get; set; }
         public string name { get; set; }
         public string note { get; set; }
+        [JsonProperty("params")]
         public int[] _params { get; set; }
         public int price { get; set; }
         public int wtypeId { get; set; }
