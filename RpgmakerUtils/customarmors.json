@@ -1,0 +1,20 @@
+[
+  {
+    "id": 6,
+    "atypeId": 2,
+    "description": "So fancy!",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0
+      }
+    ],
+    "iconIndex": 1198,
+    "name": "Fancy Clothes",
+    "note": "",
+    "params": [ 0, 1, 0, 1, 1, 0, 0, 0 ],
+    "price": 500
+  }
+]
