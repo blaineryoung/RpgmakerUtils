@@ -28,7 +28,7 @@ namespace RpgmakerUtils
 
         static Material[] materials =
         {
-            new Material(){ name = "Bronze", level = 1, types = new int[] {2, 1, 4, 9}},
+            new Material(){ name = "Rusty", level = 1, types = new int[] {2, 1, 4, 9}},
             new Material(){ name = "Iron", level = 4, types = new int[] {2, 1, 4, 9}},
             new Material(){ name = "Steel", level = 8, types = new int[] {2, 1, 4, 9}},
             new Material(){ name = "Hardened", level = 12, types = new int[] {2, 1, 4, 9}},
@@ -95,17 +95,5 @@ namespace RpgmakerUtils
         public int wtypeId { get; set; }
     }
 
-    public class Trait
-    {
-        public int code { get; set; }
-        public int dataId { get; set; }
-        public float value { get; set; }
-    }
 
-    public class Material
-    {
-        public string name { get; set; }
-        public int level { get; set; }
-        public int[] types { get; set; }
-    }
 }
