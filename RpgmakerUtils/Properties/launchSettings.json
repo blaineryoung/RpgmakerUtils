@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RpgmakerUtils": {
+      "commandName": "Project",
+      "commandLineArgs": "weapons.json"
+    }
+  }
+}

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace RpgmakerUtils 
 {
@@ -17,7 +18,7 @@ namespace RpgmakerUtils
             new Weapon(){ description = "A axe", iconIndex= 931, name = "Axe", price = 200, _params = new int[] { 0, 0, 5, 0, 0, 0, 0, 0 },  wtypeId = 4, traits = defaultTraits, etypeId = 1, animationId = 6, },
             new Weapon(){ description = "A gun", iconIndex= 990, name = "Gun", price = 400, _params = new int[] { 0, 0, 3, 0, 0, 0, 0, 0 },  wtypeId = 9, traits = defaultTraits, etypeId = 1, animationId = 1, },
             new Weapon(){ description = "A bow", iconIndex= 990, name = "Bow", price = 350, _params = new int[] { 0, 0, 2, 0, 0, 0, 0, 0 },  wtypeId = 7, traits = defaultTraits, etypeId = 1, animationId = 1, },
-            new Weapon(){ description = "A staff", iconIndex= 972, name = "Staff", price = 400, _params = new int[] { 0, 0, 1, 0, 3, 0, 0, 0 },  wtypeId = 6, traits = defaultTraits, etypeId = 1, animationId = 1, },
+            new Weapon(){ description = "A staff", iconIndex= 972, name = "Staff", price = 400, _params = new int[] { 0, 5, 1, 0, 3, 0, 0, 0 },  wtypeId = 6, traits = defaultTraits, etypeId = 1, animationId = 1, },
         };
 
         static Material[] materials =
@@ -56,7 +57,8 @@ namespace RpgmakerUtils
                 }
             }
 
-
+            string output = JsonConvert.SerializeObject(weapons);
+            File.WriteAllText(args[0], output);
         }
     }
 }
